@@ -132,7 +132,6 @@ body {
 }
 
 .coffee3 {
-    width: 50%;
     border-bottom-right-radius: 100px;
 }
 
@@ -266,11 +265,11 @@ body {
 
 .DESIGN_CAFE{
     max-width: 1000px;
-    padding-top: 80px;
     margin: 0 auto;
     display: flex;
     background-color: #fff;
     padding: 0 10px;
+    padding-top: 79px;
 }
 
 .DESIGN_CAFE_item{
@@ -316,6 +315,10 @@ html{
 }
 
 .boutou-text3_sp{
+    display: none;
+}
+
+.kaigyou{
     display: none;
 }
 
@@ -385,6 +388,7 @@ html{
         width: 100%;
         height: 100vh; /*画面幅いっぱいに表示*/
         background: rgba(0, 0, 0, 0.5); /*4つ目の値は不透明度*/
+        z-index: 10;
     }
     .sp-nav ul{
         height: 100%;
@@ -437,14 +441,13 @@ html{
     }
 
     .boutou-text3{
-        display: none;
-    }
-
-    .boutou-text3_sp{
-        display: block;
         margin-bottom: 60px;
         line-height: 1.87;
         font-size: 4.26vw;
+    }
+
+    .kaigyou{
+        display: block;
     }
 
     /*アバウトアス*/
@@ -465,12 +468,8 @@ html{
     }
 
     .coffee3{
-        display: none;
-    }
-    .coffee3_sp{
-        display: block;
-        width: 100%;
-        margin-bottom: 35px;
+        border-bottom-right-radius: 0;
+        margin-bottom: 32px;
     }
 
     .ABOUT_US_wrap2{
@@ -487,7 +486,6 @@ html{
     /*メニュー*/
     .MENU{
         padding: 0;
-        max-width: 767px;
     }
     .MENU_wrap{
         display: block;
@@ -508,7 +506,6 @@ html{
     }
 
     .box_item1{
-        max-width: 767px;
         width: 100%;
     }
 
@@ -533,15 +530,18 @@ html{
     }
 
     .EVENT_wrap{
-        padding: 18px 7.7%;
         margin-top: 19px;
         margin-bottom: 30px;
+        padding: 0;
     }
 
     .EVENT_item1{
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        font-size: 5.5vw;
+        line-height: 1;
+        padding: 18px 7.7%;
     }
 
      /*アクセス*/
@@ -562,7 +562,6 @@ html{
 
     .DESIGN_CAFE_word{
         margin-left: 4.8%;
-        padding-top: 46px;
         width: 226px;
     }
 
@@ -581,5 +580,6 @@ html{
         position: fixed;
         bottom: 20px;
         right: 20px;
+        z-index: 1;
     }
 }
