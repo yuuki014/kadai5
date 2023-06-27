@@ -60,6 +60,7 @@ body {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .logo {
@@ -200,7 +201,6 @@ body {
 
 .photo{
     margin-top: 20px;
-    width: 19.98%;
     display: flex;
     margin-bottom: 68px;
 }
@@ -320,6 +320,45 @@ html{
 
 .kaigyou{
     display: none;
+}
+
+/*メインビジュアルスライダー調整*/
+.slick-dots{
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #fff;
+}
+.slick-dots li button:before{
+    color: #fff;
+}
+
+/*ギャラリースライダー調整*/
+.slick-prev{
+    z-index: 10;
+    left: 21%; 
+    transform: rotate(-45deg);
+    border-top: 5px solid#fff;
+    border-left: 5px solid#fff;
+    
+}
+
+.slick-next{
+    z-index: 10;
+    right: 21%;
+    transform: rotate(135deg);
+    border-top: 5px solid#fff;
+    border-left: 5px solid#fff;
+}
+
+.slick-prev:before, .slick-next:before{
+    opacity: 1;
+    content: "";
+}
+
+.slick-prev:before{
+    transform: rotate(45deg);
 }
 
 /*スマホ版*/
@@ -516,8 +555,9 @@ html{
 
     .photo{
         margin-bottom: 35px;
-        display: none;
     }
+
+
 
     /*イベント*/
     .EVENT{
@@ -581,5 +621,13 @@ html{
         bottom: 20px;
         right: 20px;
         z-index: 1;
+    }
+
+    .slick-prev{
+        left: 5.3%;
+    }
+
+    .slick-next{
+        right: 5.3%;
     }
 }
