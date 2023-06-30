@@ -201,7 +201,6 @@ body {
 
 .photo{
     margin-top: 20px;
-    display: flex;
     margin-bottom: 68px;
 }
 
@@ -359,6 +358,13 @@ html{
 
 .slick-prev:before{
     transform: rotate(45deg);
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 /*スマホ版*/
